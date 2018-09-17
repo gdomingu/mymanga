@@ -4,8 +4,9 @@ class CreateMangas < ActiveRecord::Migration[5.2]
       t.string :title
       t.text :description
       t.date :first_published_at
-      t.string :author_name
-      t.string :publisher_name
+      t.string :author
+      t.string :publisher
+      t.string :genre
 
       t.timestamps
     end

@@ -34,8 +34,9 @@ ActiveRecord::Schema.define(version: 2018_09_16_214947) do
     t.string "title"
     t.text "description"
     t.date "first_published_at"
-    t.string "author_name"
-    t.string "publisher_name"
+    t.string "author"
+    t.string "publisher"
+    t.string "genre"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
