@@ -19,13 +19,13 @@ class ListsContainer extends Component {
     }
     render() {
         return (
-            <div className="lists-container">
-                {this.state.mangas.map( list => {
+            <div className="mangas-container">
+                {this.state.mangas.map( manga => {
                     return (
-                        <div className="single-list" key={list.id}>
-                            <h4>{list.title}</h4>
-                            <p>{list.excerpt}</p>
-                        </div>
+                        <span className="single-manga" key={manga.id}>
+                            <h4>{manga.title}</h4>
+                            <img src={manga.thumbnail_url} className="single-manga--image"/>
+                        </span>
                     )
                 })}
             </div>

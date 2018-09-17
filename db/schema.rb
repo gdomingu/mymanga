@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2018_09_16_214947) do
     t.string "author"
     t.string "publisher"
     t.string "genre"
+    t.string "thumbnail_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
