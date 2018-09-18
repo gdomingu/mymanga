@@ -23,8 +23,9 @@ class ListsContainer extends Component {
                 {this.state.mangas.map( manga => {
                     return (
                         <span className="single-manga" key={manga.id}>
-                            <h4>{manga.title}</h4>
                             <img src={manga.thumbnail_url} className="single-manga--image"/>
+                            <h4>{manga.title}</h4>
+                            <h5>{manga.author}</h5>
                         </span>
                     )
                 })}
